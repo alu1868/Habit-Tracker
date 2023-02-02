@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
   <title>Habit-Tracker</title>
 </head>
 
@@ -21,37 +23,45 @@
     <ul>
       <li>
         <div class="day fullCredit"></div>
-        <small>Full Credit</small>
+        <small>Full Credit - When you feel as though you've accomplished your goals</small>
       </li>
       <li>
         <div class="day halfCredit"></div>
-        <small>Half Credit</small>
+        <small>Half Credit - When you feel as though you've given your goal an honest shot</small>
       </li>
       <li>
         <div class="day noCredit"></div>
-        <small>No Credit</small>
+        <small>No Credit - When you feel as though you've given your goal no attempt</small>
       </li>
       <li>
         <div class="day nullCredit"></div>
-        <small>Null Credit</small>
+        <small>Null Credit - Day is not counted</small>
       </li>
     </ul>
 
-    <!-- B.2: Clickables-->
+    <!-- B.4: Title -->
+    <div>
+      <textarea class="title"></textarea>
+      <button class="saveBtn">Save Title!</button>
+    </div>
+
+    <!-- B.3: Clickables-->
     <div class="container">
-      <!-- B.2.1: Week#1 -->
+      <!-- B.3.1: Week#1 -->
       <div class="row">
-        <div class="day"></div>
-        <div class="day"></div>
-        <div class="day"></div>
-        <div class="day"></div>
-        <div class="day"></div>
-        <div class="day"></div>
-        <div class="day"></div>
+        <div class="day nullCredit"></div>
+        <div class="day nullCredit"></div>
+        <div class="day nullCredit"></div>
+        <div class="day nullCredit"></div>
+        <div class="day nullCredit"></div>
+        <div class="day nullCredit"></div>
+        <div class="day nullCredit"></div>
       </div>
     </div>
-    <!-- B.3: Dynamic Results -->
-
+    <!-- B.4: Dynamic Results -->
+    <p class="text">You are <span id="count">0</span>% successful in developing your habit </p>
+    <p class="text">Only <span id="daysLeft">66 </span>days left to complete habit</p>
+    
   <script src="script.js"></script>
 </body>
 

@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #242333;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+}
+
+.container {
+  perspective: 1000px;
+  margin-bottom: 30px;
+}
+
+.day {
+  background-color: #444451;
+  height: 12px;
+  width: 15px;
+  margin: 3px;
+}
+
+.day.nullCredit {
+  background-color: grey
+}
+
+.day.fullCredit {
+  background-color: green
+}
+
+.day.halfCredit {
+  background-color: yellow
+}
+
+.day.noCredit {
+  background-color: red
+}
