@@ -1,3 +1,10 @@
+:root {
+  --full: #07f007;
+  --half: #e0e00f;
+  --failure: #df0f0f;
+  --null: #808080;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -14,30 +21,71 @@ body {
   margin: 0;
 }
 
+/* LEGEND START */
+.legend {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #777;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.legend li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+}
+
+.legend li small {
+  margin-left: 2px;
+}
+/* LEGEND END */
+
+/* TITLE START */
+.title {
+  resize: none;
+  height: 100px;
+  width: 350px;
+}
+/* TITLE END */
+
+/* DAY START */
 .container {
   perspective: 1000px;
   margin-bottom: 30px;
 }
 
+.row {
+  display: flex;
+  justify-content: center;
+}
+
 .day {
   background-color: #444451;
-  height: 12px;
+  height: 15px;
   width: 15px;
   margin: 3px;
 }
 
 .day.nullCredit {
-  background-color: grey
+  background-color: var(--null)
 }
 
 .day.fullCredit {
-  background-color: green
+  background-color: var(--full)
 }
 
 .day.halfCredit {
-  background-color: yellow
+  background-color: var(--half)
 }
 
 .day.noCredit {
-  background-color: red
+  background-color: var(--failure)
 }
+/* DAY END */
+
+/* FOOTER START */
+/* FOOTER END */
